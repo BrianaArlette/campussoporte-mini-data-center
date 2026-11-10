@@ -1,0 +1,25 @@
+CAMPUSSOPORTE — MINI CENTRO DE DATOS
+====================================
+
+1) Abre README.md para ver instrucciones y explicación del proyecto.
+2) Abre esta carpeta completa en VS Code.
+3) Inicia Docker Desktop (contenedores Linux).
+4) En PowerShell, dentro de esta carpeta, ejecuta:
+
+   python scripts/preparar.py
+   docker compose config --quiet
+   docker compose up -d --build
+   docker compose ps
+
+5) En tu navegador abre http://localhost:8080
+6) Para Grafana: http://localhost:3000
+7) Para Portainer: https://localhost:9443
+
+El Word editable de tu bitácora está en:
+   docs/Reporte_CampusSoporte_Editable.docx
+
+La aplicación ya está programada, pero los contenedores todavía deben
+probarse en TU computadora. No uses capturas ilustrativas como evidencia.
+
+NUNCA compartas .env ni ejecutes docker compose down -v
+si quieres conservar tus datos.
